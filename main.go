@@ -10,6 +10,7 @@ import (
 
 type dinero int
 var x dinero
+var y int
 
 func main() {
 	// #############################################
@@ -34,6 +35,7 @@ func main() {
 	
 	// Caracteres o símbolos de escape
 
+	// https://go.dev/ref/spec
 	// \n   U+000A line feed or newline
 	// \t   U+0009 horizontal tab
 	// \\   U+005C backslash
@@ -61,7 +63,11 @@ func main() {
 	x = 42
 	fmt.Println(x)
 
+	// #############################################
 	
+	y = int(x)
+	fmt.Println("Este es el valor de y:", y)
+	fmt.Printf("Este es el tipo de valor de y %T\n", y)
 	
-	// https://go.dev/ref/spec
+	// #############################################
 }
